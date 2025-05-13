@@ -3,21 +3,9 @@
 	"type": "module",
 	"author": "Stephan Randle",
 	"version": "1.0.0",
-	"license": "ISC",
+	"license": "MIT",
 	"keywords": [],
 	"description": "Remark plugin to automatically transform asciinema link to embedded player",
-	"files": [
-		"dist",
-		"package.json"
-	],
-	"exports": {
-		".": {
-			"types": "./dist/index.d.ts",
-			"import": "./dist/index.js",
-			"require": "./dist/index.cjs"
-		},
-		"./package.json": "./package.json"
-	},
 	"scripts": {
 		"build": "tsup",
 		"prepublish": "tsup",
