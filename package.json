@@ -7,12 +7,10 @@
 	"keywords": [],
 	"description": "Remark plugin to automatically transform asciinema link to embedded player",
 	"scripts": {
-		"build": "tsup",
-		"prepublish": "tsup",
-		"dev": "tsup --watch",
-		"test": "vitest run",
-		"test:coverage": "vitest run --coverage",
-		"test:ui": "vitest run --ui"
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"fmt:check": "prettier . --check",
+		"fmt:write": "prettier . --write"
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.29.4",
@@ -22,6 +20,7 @@
 		"@vitest/coverage-v8": "^3.0.4",
 		"@vitest/ui": "^3.0.4",
 		"eslint": "^9.19.0",
+		"eslint-config-flat-gitignore": "^2.1.0",
 		"globals": "^15.14.0",
 		"prettier": "^3.4.2",
 		"prettier-plugin-astro": "^0.14.1",
