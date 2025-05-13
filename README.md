@@ -1,8 +1,49 @@
-# Remark Asciinema
+# remark-asciinema
 
-Plugin to replace asciinema links with asciinema script or asciinema image
+A [remark](https://github.com/remarkjs/remark) plugin that transforms special links into embedded [asciinema](https://asciinema.org/) players or screenshots.
 
-## References
+[![npm version](https://badge.fury.io/js/remark-asciinema.svg?icon=si%3Anpm)](https://badge.fury.io/js/remark-asciinema)
 
-- [Gatsby Remark Transformer Plugin](https://www.gatsbyjs.com/tutorial/remark-plugin-tutorial/#find-and-modify-markdown-nodes)
-- [Remark codesandbox](https://github.com/kevin940726/remark-codesandbox/blob/master/packages/remark-codesandbox/src/index.js)
+## Features
+
+- Automatically converts specific links into:
+  - `<script>` embeds for live asciinema players
+  - `<img>` tags for static cast thumbnails
+
+## Example
+
+Before:
+
+```markdown
+Check out this demo: https://asciinema.org/a/12345
+```
+
+After (HTML output):
+
+```html
+Check out this demo:
+<script
+  id="asciicast-12345"
+  src="https://asciinema.org/a/12345.js"
+  async
+></script>
+```
+
+## Installation
+
+```bash
+pnpm install remark-asciinema
+```
+
+## Usage
+
+```js
+import { remark } from "remark";
+import remarkAsciinemaLink from "remark-asciinema-link";
+
+const file = await remark()
+  .use(remarkAsciinemaLink)
+  .process("Check out: https://asciinema.org/a/abc123");
+
+console.log(String(file));
+```
