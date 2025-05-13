@@ -49,3 +49,8 @@ const file = await remark()
 
 console.log(String(file));
 ```
+
+**Note**: After integrating the Remark plugin, ensure you include the necessary asciinema JavaScript and CSS files to enable proper playback and styling. You can load them via [UNPKG](https://unpkg.com/):
+
+- https://unpkg.com/asciinema-player@3.9.0/dist/bundle/asciinema-player.css
+- https://unpkg.com/asciinema-player@3.9.0/dist/bundle/asciinema-player.min.js
