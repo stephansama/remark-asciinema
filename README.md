@@ -1,6 +1,6 @@
 # Remark Asciinema
 
-Plugin to replace asciinema links with asciinema script
+Plugin to replace asciinema links with asciinema script or asciinema image
 
 ## References
 

@@ -1,11 +1,12 @@
 {
-	"extends": "@tsconfig/recommended/tsconfig.json",
+	"extends": ["../../tsconfig.json"],
 	"exclude": ["node_modules", "dist"],
 	"include": ["./**/*"],
 	"compilerOptions": {
 		"allowImportingTsExtensions": true,
 		"allowJs": true,
 		"baseUrl": ".",
+		"outDir": "./dist",
 		"isolatedModules": true,
 		"lib": ["ESNext"],
 		"module": "ESNext",

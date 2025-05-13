@@ -1,0 +1,21 @@
+{
+	"name": "blog",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev --port 4455",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"@astrojs/mdx": "^4.2.6",
+		"@astrojs/rss": "^4.0.11",
+		"@astrojs/sitemap": "^3.4.0",
+		"astro": "^5.7.12",
+		"remark-asciinema": "file:.yalc/remark-asciinema"
+	},
+	"devDependencies": {
+		"@astrojs/ts-plugin": "^1.10.4"
+	}
+}

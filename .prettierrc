@@ -4,7 +4,14 @@
 	"quoteProps": "consistent",
 	"singleQuote": false,
 	"jsxSingleQuote": false,
+	"plugins": [
+		"prettier-plugin-astro",
+		"prettier-plugin-organize-imports",
+		"prettier-plugin-astro-organize-imports"
+	],
 	"overrides": [
+		{ "files": ["*.md"], "options": { "tabWidth": 2, "useTabs": false } },
+		{ "files": "*.astro", "options": { "parser": "astro" } },
 		{
 			"files": ["*.jsx", "*.tsx", "*.html", "*.json"],
 			"options": { "tabWidth": 2 }
