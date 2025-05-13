@@ -1,16 +1,18 @@
 # remark-asciinema
 
-A [remark](https://github.com/remarkjs/remark) plugin that transforms special links into embedded [asciinema](https://asciinema.org/) players or screenshots.
+A [remark](https://github.com/remarkjs/remark) plugin that transforms asciinema links into either an embedded [asciinema](https://docs.asciinema.org/manual/player/) player or screenshot that links to the recording.
 
 [![npm version](https://badge.fury.io/js/remark-asciinema.svg?icon=si%3Anpm)](https://badge.fury.io/js/remark-asciinema)
 
 ## Features
 
-- Automatically converts specific links into:
+- 🪄 Automatically converts asciinema links into:
   - `<script>` embeds for live asciinema players
-  - `<img>` tags for static cast thumbnails
+  - `<img>` tags for static cast thumbnails that link to the recording
 
 ## Example
+
+![Example](./demo.gif)
 
 Before:
 
@@ -39,10 +41,10 @@ pnpm install remark-asciinema
 
 ```js
 import { remark } from "remark";
-import remarkAsciinemaLink from "remark-asciinema-link";
+import asciinema from "remark-asciinema";
 
 const file = await remark()
-  .use(remarkAsciinemaLink)
+  .use(asciinema)
   .process("Check out: https://asciinema.org/a/abc123");
 
 console.log(String(file));
