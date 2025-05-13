@@ -15,6 +15,7 @@
 		"astro": "^5.7.12"
 	},
 	"devDependencies": {
-		"@astrojs/ts-plugin": "^1.10.4"
+		"@astrojs/ts-plugin": "^1.10.4",
+		"remark-asciinema": "workspace:^"
 	}
 }

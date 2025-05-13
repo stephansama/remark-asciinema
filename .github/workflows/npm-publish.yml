@@ -29,6 +29,6 @@ jobs:
           cache: "pnpm"
       - name: 📦 Installing dependencies
         run: pnpm install
-      - run: pnpm --filter remark-asciinema run publish
+      - run: npm publish --access public packages/remark-asciinema
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
