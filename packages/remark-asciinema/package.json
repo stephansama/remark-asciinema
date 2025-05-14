@@ -1,9 +1,15 @@
 {
 	"name": "remark-asciinema",
 	"type": "module",
-	"version": "1.0.1",
+	"readme": "../../README.md",
 	"license": "MIT",
+	"version": "1.0.2",
 	"description": "A remark plugin that transforms Asciinema links into embedded players or screenshots.",
+	"keywords": [
+		"asciinema",
+		"remark",
+		"remark-plugin"
+	],
 	"author": {
 		"email": "stephanrandle@hotmail.com",
 		"name": "Stephan Randle",
@@ -17,7 +23,6 @@
 	"scripts": {
 		"build": "tsup",
 		"prepublish": "tsup",
-		"prepublishOnly": "npm run build",
 		"dev": "tsup --watch",
 		"test": "vitest run",
 		"test:coverage": "vitest run --coverage",
