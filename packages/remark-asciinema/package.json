@@ -30,6 +30,10 @@
 		},
 		"./package.json": "./package.json"
 	},
+	"publishConfig": {
+		"access": "public",
+		"provenance": true
+	},
 	"devDependencies": {
 		"remark": "^15.0.1",
 		"tsup": "^8.3.6",

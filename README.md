@@ -3,6 +3,7 @@
 A [remark](https://github.com/remarkjs/remark) plugin that transforms asciinema links into either an embedded [asciinema](https://docs.asciinema.org/manual/player/) player or screenshot that links to the recording.
 
 [![npm version](https://badge.fury.io/js/remark-asciinema.svg?icon=si%3Anpm)](https://badge.fury.io/js/remark-asciinema)
+[![npm downloads](https://img.shields.io/npm/dw/remark-asciinema)](https://www.npmjs.com/package/remark-asciinema)
 
 ## Features
 
