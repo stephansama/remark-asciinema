@@ -5,6 +5,11 @@
 	"version": "1.0.0",
 	"license": "MIT",
 	"keywords": [],
+	"repository": {
+		"url": "https://github.com/stephansama/remark-asciinema",
+		"type": "git",
+		"directory": "packages/remark-asciinema"
+	},
 	"description": "Remark plugin to automatically transform asciinema link to embedded player",
 	"scripts": {
 		"test": "vitest run",
