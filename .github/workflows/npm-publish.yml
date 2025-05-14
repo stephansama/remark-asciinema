@@ -5,6 +5,10 @@ on:
   workflow_dispatch:
   release:
     types: [created]
+permissions:
+  id-token: write
+  pull-requests: write
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
