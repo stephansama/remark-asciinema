@@ -1,7 +1,7 @@
 {
 	"name": "remark-asciinema",
 	"type": "module",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"license": "MIT",
 	"description": "A remark plugin that transforms Asciinema links into embedded players or screenshots.",
 	"author": {
